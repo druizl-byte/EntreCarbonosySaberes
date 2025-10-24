@@ -84,99 +84,25 @@ li{list-style-position:outside}
 	#packageLicense.cc{padding-left:0;text-align:center}
 	.toggle-idevice{display:none}
 }
-/* eXeLearning Style Designer */
-.iDevice_header{
-/*emTitleBGColor*/
-background-color:#ffffff;border-color:#dddddd;
-}
-.iDevice_inner{
-border-color:/*emBorderColor*/
-#dddddd;
-}
-.iDevice_header .toggle-idevice a{
-/*emIconColor*/
-background-image:url(_style_icons_black.png);
-}
-.iDeviceTitle{
-background-image:url(icon_star_black.png);
-}
-.activityIdevice .iDeviceTitle{
-background-image:url(icon_assignment_black.png);
-}
-.readingIdevice .iDeviceTitle{
-background-image:url(icon_unread_black.png);
-}
-.FileAttachIdeviceInc .iDeviceTitle{
-background-image:url(icon_download_black.png);
-}
-.WikipediaIdevice .iDeviceTitle{
-background-image:url(icon_description_black.png);
-}
-.ListaIdevice .iDeviceTitle,.QuizTestIdevice .iDeviceTitle,.MultichoiceIdevice .iDeviceTitle,.TrueFalseIdevice .iDeviceTitle,.MultiSelectIdevice .iDeviceTitle,.ClozeIdevice .iDeviceTitle{
-background-image:url(icon_question_black.png);
-}
-.preknowledgeIdevice .iDeviceTitle{
-background-image:url(icon_announcement_black.png);
-}
-.GalleryIdevice .iDeviceTitle{
-background-image:url(icon_media_black.png);
-}
-.objectivesIdevice .iDeviceTitle{
-background-image:url(icon_info_black.png);
-}
-.ReflectionIdevice .iDeviceTitle{
-background-image:url(icon_account_black.png);
-}
-.toggle-em0 a{
-/*noEmIconColor*/
-background-image:url(_style_icons_black.png);
-}
-body{
-/*bodyColor*/
-color:#333333;
-/*fontSize*/
-font-size:100%;
-}
-a{
-/*aColor*/
-color:#2495ff;
-}
-#header,#emptyHeader,#nodeDecoration{
-height:auto!important;
-/*headerHeight*/
-height:150px;min-height:150px;
-/*headerBGURL*/
-background-image:url(T%C3%ADtulo%20(5).png);
-/*headerBGRepeat*/
-background-repeat:no-repeat;
-/*headerBGPosition*/
-background-position:50% 50%;
-}
-#headerContent{
-/*headerTitleTopMargin*/
-padding-top:70px;
-/*headerTitleFontFamily*/
-font-family:"Times New Roman", Times, serif;
-/*headerTitleColor*/
-color:#000000;
-/*headerTitleTextShadowColor*/
-text-shadow:1px 1px 1px #999999;
-/*headerTitleAlign*/
-text-align:center;
-/*headerTitleFontSize*/
-font-size:150%;
-}
-#siteFooter{
-border:1px solid /*footerBorderColor*/
-#dddddd;
-/*footerColor*/
-color:#0a0000;
-/*footerTextAlign*/
-text-align:center;
-/*footerFontSize*/
-font-size:70%;
-}
-#siteFooter a{
-/*footerAColor*/
-color:#ffaaaa;
-}
+/* eXeLearning Style Designer */.iDevice_header{/*emTitleBGColor*/background-color:#ffffff;border-color:#dddddd;}
+.iDevice_inner{/*emBGColor*/background-color:#ffffff;border-color:/*emBorderColor*/#dddddd;}
+.iDevice_header .toggle-idevice a{/*emIconColor*/background-image:url(_style_icons_black.png);}
+.iDeviceTitle{background-image:url(icon_star_black.png);}
+.activityIdevice .iDeviceTitle{background-image:url(icon_assignment_black.png);}
+.readingIdevice .iDeviceTitle{background-image:url(icon_unread_black.png);}
+.FileAttachIdeviceInc .iDeviceTitle{background-image:url(icon_download_black.png);}
+.WikipediaIdevice .iDeviceTitle{background-image:url(icon_description_black.png);}
+.ListaIdevice .iDeviceTitle,.QuizTestIdevice .iDeviceTitle,.MultichoiceIdevice .iDeviceTitle,.TrueFalseIdevice .iDeviceTitle,.MultiSelectIdevice .iDeviceTitle,.ClozeIdevice .iDeviceTitle{background-image:url(icon_question_black.png);}
+.preknowledgeIdevice .iDeviceTitle{background-image:url(icon_announcement_black.png);}
+.GalleryIdevice .iDeviceTitle{background-image:url(icon_media_black.png);}
+.objectivesIdevice .iDeviceTitle{background-image:url(icon_info_black.png);}
+.ReflectionIdevice .iDeviceTitle{background-image:url(icon_account_black.png);}
+.toggle-em0 a{/*noEmIconColor*/background-image:url(_style_icons_black.png);}
+body{/*bodyColor*/color:#333333;/*fontSize*/font-size:100%;}
+a{/*aColor*/color:#2495ff;}
+#header,#emptyHeader,#nodeDecoration{height:auto!important;/*headerHeight*/height:200px;min-height:200px;/*headerBGURL*/background-image:url(T%C3%ADtulo.png);/*headerBGRepeat*/background-repeat:no-repeat;/*headerBGPosition*/background-position:50% 50%;}
+#headerContent{/*hideProjectTitle*/position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);}
+#siteFooter{border:1px solid /*footerBorderColor*/#dddddd;/*footerColor*/color:#ffffff;/*footerTextAlign*/text-align:center;/*footerFontSize*/font-size:70%;}
+#siteFooter a{/*footerAColor*/color:#ffaaaa;}
+/* eXeLearning Style Designer (custom CSS) */
+

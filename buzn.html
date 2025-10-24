@@ -67,261 +67,144 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Buzón</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id203">
+<article class="iDevice_wrapper textIdevice" id="id207">
 <div class="iDevice emphasis0" >
-<div id="ta203_201_2" class="block iDevice_content">
-<div class="exe-text"><p></p>
+<div id="ta207_207_2" class="block iDevice_content">
+<div class="exe-text"><!-- BLOQUE SEGURO -->
 <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        header {
-            background: #2c5530;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .subtitle {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        .form-info {
-            background: #e8f5e8;
-            padding: 1.5rem 2rem;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .form-info h3 {
-            color: #2c5530;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .feature {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            border: 1px solid #4CAF50;
-        }
-        
-        .feature i {
-            font-size: 1.5rem;
-            color: #4CAF50;
-            margin-bottom: 0.5rem;
-        }
-        
-        .form-container {
-            padding: 0;
-            position: relative;
-        }
-        
-        .iframe-wrapper {
-            width: 100%;
-            height: 700px;
-            border: none;
-            overflow: hidden;
-        }
-        
-        .forms-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            background: white;
-        }
-        
-        .loading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #666;
-        }
-        
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #4CAF50;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 2s linear infinite;
-            margin: 0 auto 1rem;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .actions {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            text-align: center;
-            border-top: 1px solid #ddd;
-        }
-        
-        .btn-direct {
-            background: #4CAF50;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        
-        .btn-direct:hover {
-            background: #45a049;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
-        }
-        
-        .privacy-notice {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-radius: 8px;
-            padding: 1rem;
-            margin: 1rem 2rem;
-            text-align: center;
-        }
-        
-        @media (max-width: 768px) {
-            .forms-iframe {
-                height: 600px;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
-            }
-            
-            .form-info {
-                padding: 1rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .forms-iframe {
-                height: 500px;
-            }
-            
-            header {
-                padding: 1.5rem 1rem;
-            }
-            
-            .container {
-                margin: 10px;
-            }
-        }
-        
-        /* Estilos para mejorar la visualización del formulario */
-        .form-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #4CAF50, #45a049, #4CAF50);
-            z-index: 10;
-        }</style>
-<div class="container">
+  /* Estilos solo para el contenedor */
+  #formulario-contenedor {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #formulario-contenedor .form-header {
+    background: transparent; /* ✅ Ahora transparente */
+    color: black;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #formulario-contenedor .form-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  #formulario-contenedor .form-header .subtitle {
+    opacity: .7;
+    font-size: .95rem;
+  }
+
+  #formulario-contenedor .form-info {
+    background: #e8f5e8;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #formulario-contenedor .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  #formulario-contenedor .feature {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #4CAF50;
+  }
+
+  #formulario-contenedor .iframe-wrapper {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #formulario-contenedor .forms-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: white;
+  }
+
+  #formulario-contenedor .privacy-notice {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    text-align: center;
+  }
+
+  #formulario-contenedor .actions {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+
+  .btn-direct {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .btn-direct:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76,175,80,0.3);
+  }
+
+  @media (max-width: 768px) {
+    #formulario-contenedor .forms-iframe { height: 600px; }
+    #formulario-contenedor .form-info { padding: 1rem; }
+    #formulario-contenedor .features { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 480px) {
+    #formulario-contenedor .forms-iframe { height: 500px; }
+    #formulario-contenedor { margin: 10px; }
+  }
+</style>
+<div id="formulario-contenedor">
+<div class="form-header">
+<h1>Encuesta — AVA Hidrocarburos</h1>
+<div class="subtitle">Tu opinión es anónima y nos ayuda a mejorar</div>
+</div>
 <div class="form-info">
 <div class="features">
-<div class="feature"><i>🔒</i> <strong>Confidencialidad</strong>
+<div class="feature"><strong>🔒 Confidencialidad</strong>
 <p>Respuestas anónimas</p>
 </div>
-<div class="feature"><i>💡</i> <strong>Propósito</strong>
+<div class="feature"><strong>💡 Propósito</strong>
 <p>Mejora educativa</p>
 </div>
 </div>
 </div>
-<div class="privacy-notice"><strong>⚠️ Importante:</strong> Tus respuestas son completamente anónimas y serán utilizadas únicamente con fines académicos y de mejora del curso.</div>
+<div class="privacy-notice"><strong>⚠️ Importante:</strong> Tus respuestas solo se usarán con fines académicos.</div>
 <div class="form-container">
-<div class="iframe-wrapper"><iframe width="300" height="150" class="forms-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSceMKqm17PpOl4srkvRVpafxrjmbCTB840qpL7W6DcE8nbHnQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">
-                    Cargando formulario...
-                </iframe></div>
+<div class="iframe-wrapper"><iframe width="300" height="150" class="forms-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSceMKqm17PpOl4srkvRVpafxrjmbCTB840qpL7W6DcE8nbHnQ/viewform?embedded=true" title="Formulario embebido"></iframe></div>
 </div>
-<div class="actions"><a href="https://docs.google.com/forms/d/e/1FAIpQLSceMKqm17PpOl4srkvRVpafxrjmbCTB840qpL7W6DcE8nbHnQ/viewform?usp=sharing&amp;ouid=102837938504584009246" target="_blank" class="btn-direct" rel="noopener"> 🔗 Abrir encuesta en nueva pestaña </a></div>
-</div>
-<p>
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const iframe = document.querySelector('.forms-iframe');
-            const loading = document.createElement('div');
-            loading.className = 'loading';
-            loading.innerHTML = `
-                <div class="spinner"></div>
-                <p>Cargando formulario...</p>
-            `;
-            
-            iframe.parentNode.appendChild(loading);
-            
-            iframe.addEventListener('load', function() {
-                loading.style.display = 'none';
-                console.log('Formulario de Google Forms cargado correctamente');
-            });
-            
-            // Manejar errores de carga
-            iframe.addEventListener('error', function() {
-                loading.innerHTML = `
-                    <div style="color: #d32f2f; font-size: 3rem;">⚠️</div>
-                    <p>Error al cargar el formulario</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSceMKqm17PpOl4srkvRVpafxrjmbCTB840qpL7W6DcE8nbHnQ/viewform" 
-                       target="_blank" 
-                       style="color: #4CAF50; text-decoration: underline;">
-                        Haz clic aquí para acceder al formulario
-                    </a>
-                `;
-            });
-        });
-    </script>
-</p></div>
+<div class="actions"><a href="https://docs.google.com/forms/d/e/1FAIpQLSceMKqm17PpOl4srkvRVpafxrjmbCTB840qpL7W6DcE8nbHnQ/viewform?usp=sharing" target="_blank" class="btn-direct" rel="noopener">🔗 Abrir encuesta en nueva pestaña</a></div>
+</div></div>
 </div>
 </div>
 </article>

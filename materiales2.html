@@ -71,158 +71,122 @@
 <div class="iDevice emphasis0" >
 <div id="ta190_190_2" class="block iDevice_content">
 <div class="exe-text"><p></p>
-<style>
-        body {
-            background-color: #f0f8ff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: linear-gradient(135deg, #1e5799 0%, #2989d8 100%);
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .section-title {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: #1e5799;
-            padding-bottom: 0.5rem;
-            font-size: 1.8rem;
-        }
-        .resources-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .resource-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            width: 360px;
-            padding: 1rem;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .resource-card:hover {
-            transform: translateY(-5px);
-        }
-        .video-container {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.25%;
-            margin-bottom: 1rem;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .description {
-            text-align: justify;
-            font-size: 15px;
-            color: #555;
-            margin-bottom: 1rem;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #2c7fb8;
-            color: white;
-            padding: 0.7rem 1.2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #1e5799;
-        }
-        .video-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #777;
-        }</style>
+<style> /* ✅ No afecta el header global */ .recursos-page-header { background: transparent; /* ✅ transparente */ color: inherit; text-align: center; padding: 2rem 1rem; } body { background-color: #f0f8ff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; margin: 0; padding: 0; } h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #1e5799; } .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; } .section-title { text-align: center; margin-bottom: 1.5rem; color: #1e5799; padding-bottom: 0.5rem; font-size: 1.8rem; } .resources-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; } .resource-card { background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 360px; padding: 1rem; text-align: center; transition: transform 0.3s ease; } .resource-card:hover { transform: translateY(-5px); } .video-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin-bottom: 1rem; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px; } .description { text-align: justify; font-size: 15px; color: #555; margin-bottom: 1rem; line-height: 1.5; } .btn { display: inline-block; background-color: #2c7fb8; color: white; padding: 0.7rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease; margin-top: 0.5rem; } .btn:hover { background-color: #1e5799; } .video-meta { display: flex; justify-content: space-between; margin-top: 0.5rem; font-size: 0.85rem; color: #777; } .resource-card h3 { color: #1e5799; margin-bottom: 1rem; font-size: 1.2rem; } .intro-text { text-align: center; max-width: 800px; margin: 0 auto 2rem; color: #555; line-height: 1.6; } .category-filter { display: flex; justify-content: center; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap; } .filter-btn { background: white; border: 1px solid #2c7fb8; color: #2c7fb8; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; transition: all 0.3s ease; } .filter-btn.active, .filter-btn:hover { background: #2c7fb8; color: white; } .footer { text-align: center; margin-top: 3rem; padding: 1.5rem; color: #777; border-top: 1px solid #ddd; } @media (max-width: 768px) { .resource-card { width: 100%; max-width: 400px; } h1 { font-size: 1.7rem; } } </style>
+<!-- ✅ Si quieres usar tu propio título dentro del bloque -->
+<div class="recursos-page-header">
+<h1>Videos sobre manejo de residuos</h1>
+</div>
 <div class="container">
 <div class="resources-grid"><!-- Video Greenpeace -->
-<div class="resource-card">
+<div class="resource-card" data-category="impacto">
 <h3>Botadero de Doña Juana - Greenpeace</h3>
-<div class="video-container"><iframe width="300" height="150" src="https://www.youtube.com/embed/TDKBB-uApi0?si=0VSP5_8t3P-4f-3L" title="Botadero de Doña Juana - Greenpeace" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div>
-<p class="description">Reportaje de Greenpeace sobre la situación del botadero de Doña Juana en Bogotá y su impacto ambiental en la comunidad y los ecosistemas.</p>
+<div class="video-container"><iframe width="300" height="150" src="https://www.youtube.com/embed/TDKBB-uApi0?si=0VSP5_8t3P-4f-3L" allowfullscreen="allowfullscreen"></iframe></div>
+<p class="description">Reportaje de Greenpeace sobre el impacto ambiental del relleno sanitario Doña Juana, el principal destino de los residuos de Bogotá y su área metropolitana.</p>
 <div class="video-meta"><span>Fuente: Greenpeace</span> <span>Año: 2022</span></div>
 <a href="https://www.youtube.com/embed/TDKBB-uApi0" target="_blank" class="btn" rel="noopener">Ver en YouTube</a></div>
 <!-- Video Pirri -->
-<div class="resource-card">
+<div class="resource-card" data-category="recicladores">
 <h3>Recicladores en Bogotá - Pirri</h3>
-<div class="video-container"><iframe width="300" height="150" src="https://www.youtube.com/embed/ODNss7X_hzE?si=bLKaFKlTD4Ck3iEk" title="Recicladores en Bogotá - Pirri" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div>
-<p class="description">Documental sobre la labor de los recicladores en Bogotá, su importancia en la cadena de reciclaje y los desafíos que enfrentan.</p>
+<div class="video-container"><iframe width="300" height="150" src="https://www.youtube.com/embed/ODNss7X_hzE?si=bLKaFKlTD4Ck3iEk" allowfullscreen="allowfullscreen"></iframe></div>
+<p class="description">Documental que muestra la labor de los recicladores y los desafíos que enfrentan en su trabajo diario por la ciudad, reconociendo su importante contribución ambiental.</p>
 <div class="video-meta"><span>Fuente: Pirri</span> <span>Año: 2018</span></div>
 <a href="https://www.youtube.com/embed/ODNss7X_hzE" target="_blank" class="btn" rel="noopener">Ver en YouTube</a></div>
 <!-- Video Reciclaje -->
-<div class="resource-card">
-<h3><span style="color: #008000;">Nota verde</span></h3>
-<div class="video-container"><iframe width="300" height="150" src="https://www.youtube.com/embed/VXPLOq92kHI?si=e8Q4uZosZQmYVU1Q" title="El Reciclaje: Proceso Completo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div>
-<p class="description">Documental completo de 31 minutos que explica el proceso completo del reciclaje, desde la recolección hasta la transformación de materiales.</p>
-<div class="video-meta"><span>Duración: 31 min</span> <span>Proceso completo</span></div>
+<div class="resource-card" data-category="reciclaje">
+<h3 style="color: #008000;">Nota verde</h3>
+<div class="video-container"><iframe width="300" height="150" src="https://www.youtube.com/embed/VXPLOq92kHI?si=e8Q4uZosZQmYVU1Q" allowfullscreen="allowfullscreen"></iframe></div>
+<p class="description">Documental educativo que explica el proceso completo del reciclaje, desde la separación en fuente hasta la transformación de materiales en nuevos productos.</p>
+<div class="video-meta"><span>Duración: 31 min</span></div>
 <a href="https://www.youtube.com/embed/VXPLOq92kHI" target="_blank" class="btn" rel="noopener">Ver en YouTube</a></div>
 </div>
-</div></div>
+</div>
+<p>
+<script>document.addEventListener('DOMContentLoaded', function() { const filterButtons = document.querySelectorAll('.filter-btn'); const resourceCards = document.querySelectorAll('.resource-card'); filterButtons.forEach(button => { button.addEventListener('click', function() { // Remover clase active de todos los botones filterButtons.forEach(btn => btn.classList.remove('active')); // Agregar clase active al botón clickeado this.classList.add('active'); const filterValue = this.getAttribute('data-filter'); // Mostrar/ocultar tarjetas según el filtro resourceCards.forEach(card => { if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) { card.style.display = 'block'; } else { card.style.display = 'none'; } }); }); }); // Añadir efecto de carga progresiva a los iframes para mejor rendimiento const videoContainers = document.querySelectorAll('.video-container'); const lazyLoadVideos = () => { videoContainers.forEach(container => { const iframe = container.querySelector('iframe'); const src = iframe.getAttribute('src'); // Remover src inicial iframe.removeAttribute('src'); // Cargar video cuando esté en viewport const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { iframe.setAttribute('src', src); observer.unobserve(entry.target); } }); }); observer.observe(container); }); }; // Ejecutar lazy loading lazyLoadVideos(); }); </script>
+</p></div>
 </div>
 </div>
 </article>
 <article class="iDevice_wrapper textIdevice" id="id187">
 <div class="iDevice emphasis0" >
 <div id="ta187_187_2" class="block iDevice_content">
-<div class="exe-text"><h2 style="text-align: center; color: #2c3e50;">Materiales de lectura e infografías para el debate</h2>
+<div class="exe-text"><!-- ✅ Contenedor que protege el diseño del resto de la página -->
+<div style="padding: 20px;">
+<div style="padding: 20px;">
+<h2 style="text-align: center; color: #2c3e50;">Materiales de lectura e infografías para el debate</h2>
 <p style="text-align: center; font-size: 16px;">Consulta los siguientes recursos antes de participar en el foro. Cada documento te ayudará a comprender mejor la contaminación por microplásticos, su impacto ambiental y las alternativas sostenibles.</p>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;"><!-- Bloque 1 -->
-<div style="width: 340px; background: #f9f9f9; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+</div>
+</div>
+<style>
+    #recursos-microplasticos .box-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #recursos-microplasticos .box {
+        width: 340px;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #e8e8e8;
+    }
+
+    #recursos-microplasticos .box p {
+        font-size: 15px;
+        text-align: justify;
+        color: #555;
+    }
+
+    #recursos-microplasticos .box a {
+        display: inline-block;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    /* Colores individuales para cada botón */
+    #recursos-microplasticos a.btn1 { background: #16a085; }
+    #recursos-microplasticos a.btn2 { background: #2980b9; }
+    #recursos-microplasticos a.btn3 { background: #d35400; }
+    #recursos-microplasticos a.btn4 { background: #8e44ad; }
+    #recursos-microplasticos a.btn5 { background: #c0392b; }
+    #recursos-microplasticos a.btn6 { background: #27ae60; }
+</style>
+<div id="recursos-microplasticos" style="padding: 20px;">
+<div class="box-grid">
+<div class="box">
 <h3 style="color: #16a085;">♻️ Plásticos y economía circular</h3>
-<p style="font-size: 15px; text-align: justify;">Infografía de <strong>Ecoplas (Argentina)</strong> que muestra cómo los plásticos pueden integrarse en una economía circular a través del reciclaje, la reutilización y la innovación en materiales sostenibles.</p>
-<a href="https://ecoplas.org.ar/site2020/wp-content/uploads/2023/06/01062023Infografia-Plasticos-y-Economia-circular-2.pdf" target="_blank" style="display: inline-block; background: #16a085; color: white; padding: 10px 20px; border-radius: 10px; text-decoration: none;" rel="noopener">🔗 Ver infografía</a></div>
-<!-- Bloque 2 -->
-<div style="width: 340px; background: #f9f9f9; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+<p>Infografía de <strong>Ecoplas (Argentina)</strong> que muestra cómo los plásticos pueden integrarse en una economía circular.</p>
+<a class="btn1" href="https://ecoplas.org.ar/site2020/wp-content/uploads/2023/06/01062023Infografia-Plasticos-y-Economia-circular-2.pdf" target="_blank" rel="noopener">🔗 Ver infografía</a></div>
+<div class="box">
 <h3 style="color: #2980b9;">🌊 Microplásticos durante la pandemia</h3>
-<p style="font-size: 15px; text-align: justify;">Infografía elaborada por <strong>Esciencia</strong> que explica cómo el uso masivo de mascarillas y productos plásticos durante la pandemia aumentó la contaminación por microplásticos.</p>
-<a href="https://alimentandolaciencia.esciencia.es/wp-content/uploads/2023/08/Infografia-Microplasticos-PandemiaCOCO.pdf" target="_blank" style="display: inline-block; background: #2980b9; color: white; padding: 10px 20px; border-radius: 10px; text-decoration: none;" rel="noopener">🔗 Ver infografía</a></div>
-<!-- Bloque 3 -->
-<div style="width: 340px; background: #f9f9f9; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+<p>Infografía sobre cómo el aumento del plástico por la pandemia incrementó la contaminación por microplásticos.</p>
+<a class="btn2" href="https://alimentandolaciencia.esciencia.es/wp-content/uploads/2023/08/Infografia-Microplasticos-PandemiaCOCO.pdf" target="_blank" rel="noopener">🔗 Ver infografía</a></div>
+<div class="box">
 <h3 style="color: #d35400;">🐠 ¿Cómo se generan los microplásticos?</h3>
-<p style="font-size: 15px; text-align: justify;">Infografía de <strong>Submon (España)</strong> que describe el origen de los microplásticos, su proceso de fragmentación y los efectos que producen sobre la fauna marina y los ecosistemas oceánicos.</p>
-<a href="https://www.submon.org/es/infografia-como-se-generan-los-microplasticos-y-como-afectan-a-la-vida-marina/" target="_blank" style="display: inline-block; background: #d35400; color: white; padding: 10px 20px; border-radius: 10px; text-decoration: none;" rel="noopener">🔗 Ver recurso</a></div>
-<!-- Bloque 4 -->
-<div style="width: 340px; background: #f9f9f9; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+<p>Infografía que describe el origen de los microplásticos y sus efectos en los océanos.</p>
+<a class="btn3" href="https://www.submon.org/es/infografia-como-se-generan-los-microplasticos-y-como-afectan-a-la-vida-marina/" target="_blank" rel="noopener">🔗 Ver recurso</a></div>
+<div class="box">
 <h3 style="color: #8e44ad;">📘 Contaminación por microplásticos</h3>
-<p style="font-size: 15px; text-align: justify;">Artículo breve de <strong>Redalyc</strong> que analiza el crecimiento de la contaminación por microplásticos, sus fuentes principales y las estrategias de mitigación más recientes.</p>
-<a href="https://www.redalyc.org/journal/4263/426365043004/html/" target="_blank" style="display: inline-block; background: #8e44ad; color: white; padding: 10px 20px; border-radius: 10px; text-decoration: none;" rel="noopener">🔗 Leer artículo</a></div>
-<!-- Bloque 5 -->
-<div style="width: 340px; background: #f9f9f9; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+<p>Artículo sobre las fuentes de microplásticos y las estrategias de mitigación.</p>
+<a class="btn4" href="https://www.redalyc.org/journal/4263/426365043004/html/" target="_blank" rel="noopener">🔗 Leer artículo</a></div>
+<div class="box">
 <h3 style="color: #c0392b;">🧬 Impacto de los microplásticos en la salud</h3>
-<p style="font-size: 15px; text-align: justify;">Nota de prensa de la <strong>Organización Panamericana de la Salud (OPS)</strong> sobre las investigaciones actuales que alertan del aumento de microplásticos y sus posibles efectos en la salud humana.</p>
-<a href="https://www.paho.org/es/noticias/16-8-2023-expertos-discuten-impacto-microplasticos-salud-alertan-aumento-su-propagacion" target="_blank" style="display: inline-block; background: #c0392b; color: white; padding: 10px 20px; border-radius: 10px; text-decoration: none;" rel="noopener">🔗 Leer nota</a></div>
-<!-- Bloque 6 -->
-<div style="width: 340px; background: #f9f9f9; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+<p>Nota de prensa de la OPS sobre los efectos de los microplásticos en la salud humana.</p>
+<a class="btn5" href="https://www.paho.org/es/noticias/16-8-2023-expertos-discuten-impacto-microplasticos-salud-alertan-aumento-su-propagacion" target="_blank" rel="noopener">🔗 Leer nota</a></div>
+<div class="box">
 <h3 style="color: #27ae60;">🌍 Consecuencias históricas de la contaminación</h3>
-<p style="font-size: 15px; text-align: justify;">Reportaje del <strong>Programa de las Naciones Unidas para el Medio Ambiente (PNUMA)</strong> que describe la evolución del problema de los microplásticos y sus impactos ecológicos y sociales.</p>
-<a href="https://www.unep.org/es/noticias-y-reportajes/reportajes/microplasticos-consecuencias-historicas-de-la-contaminacion-por" target="_blank" style="display: inline-block; background: #27ae60; color: white; padding: 10px 20px; border-radius: 10px; text-decoration: none;" rel="noopener">🔗 Leer reportaje</a></div>
-</div></div>
+<p>Reportaje del PNUMA sobre la evolución y los impactos ecológicos y sociales de los microplásticos.</p>
+<a class="btn6" href="https://www.unep.org/es/noticias-y-reportajes/reportajes/microplasticos-consecuencias-historicas-de-la-contaminacion-por" target="_blank" rel="noopener">🔗 Leer reportaje</a></div>
+</div>
+</div>
+<!-- ✅ Cierra el contenedor protegido -->
+<p></p></div>
 </div>
 </div>
 </article>
