@@ -94,7 +94,7 @@ body{padding:0;text-align:center}
 @media screen and (min-width: 701px) and (max-width: 1015px){#siteNav li:hover,#siteNav li.sfhover{background-color:#cccccc;}
 }
 .pagination{border-color:#dddddd;}
-#bottomPagination .page-counter{color:#ffffff;}
+#bottomPagination .page-counter{color:#000000;}
 /*horizontalNavigation*/@media screen and (min-width:701px){#main,.no-nav #main{padding:10px 20px 0 20px;overflow:auto}
 #siteNav{display:table;margin-bottom:40px}
 #siteNav li:hover,#siteNav li.sfhover{background:#cccccc}
